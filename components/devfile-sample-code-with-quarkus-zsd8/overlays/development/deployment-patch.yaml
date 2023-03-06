@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-zsd8
+  namespace: e2e-demos-yazo-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:15d83946ed4524313caa91768f27b0d4d1f3551653717817a7717410fc82a564
+        name: my-java-quarkus
+        resources: {}
+status: {}
